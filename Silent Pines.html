@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0102)file:///C:/Users/mhogan/OneDrive%20-%20MacLean%20Engineering%20and%20Marketing/Desktop/pines/test1.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: #be91d3;}
+#Poems {background-color: #be91d3;}
+#Images {background-color: #be91d3;}
+#About {background-color: #be91d3;}
+</style>
+</head>
+<body style="background-color:#be91d3;">
+
+<button class="tablink" onclick="openPage(&#39;Home&#39;, this, &#39;#be91d3&#39;)" id="defaultOpen" style="">Home</button>
+<button class="tablink" onclick="openPage(&#39;Poems&#39;, this, &#39;#be91d3&#39;)">Poems</button>
+<button class="tablink" onclick="openPage(&#39;Images&#39;, this, &#39;#be91d3&#39;)">Images</button>
+<button class="tablink" onclick="openPage(&#39;About&#39;, this, &#39;#be91d3&#39;)" style="background-color: rgb(190, 145, 211);">About</button>
+
+<div id="Home" class="tabcontent" style="display: none;">
+  <h3>Home</h3>
+  <p><img src="./Silent Pines_files/1.jpg" alt="pines" style="width:250px;height:300px;">
+<title>Silent Pines</title>
+
+
+
+
+</p><h1>A Lovers Blog</h1>
+<p>To my forest girl ♥....</p>
+
+
+
+
+<p></p>
+</div>
+
+<div id="Poems" class="tabcontent" style="display: none;">
+  <h3>Poems ♥</h3>
+  <p>Words to show my love</p> 
+</div>
+
+<div id="Images" class="tabcontent" style="display: none;">
+  <h3>Images</h3>
+  <p>Our life through a lens ♥</p>
+</div>
+
+<div id="About" class="tabcontent" style="display: block;">
+  <h3>About</h3>
+  <p>Information</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+
+ 
+</body></html>
